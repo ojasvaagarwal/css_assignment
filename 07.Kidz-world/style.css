@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(120, 109, 109);
+}
+
+.store-page {
+    background-color: white;
+}
+
+.top-strip {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 60%;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart-box {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-banner {
+    background-image: url(kw-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vw;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    line-height: 5px;
+}
+
+.catalog-row {
+    width: 100%;
+}
+
+h1 {
+    margin-left: 20px;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item-tile {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-tile img {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 7px;
+    display: block;
+}
+
+.item-tile h3 {
+    font-size: 8px;
+    font-weight: bold;
+    color: #111;
+}
+
+.creator {
+    font-size: 20px;
+    color: #888;
+}
+
+.tile-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80px;
+}
+
+.cost {
+    font-size: 20px;
+}
+
+button {
+    background-color: #6195ff;
+    color: white;
+    height: 30px;
+    width: 300px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}

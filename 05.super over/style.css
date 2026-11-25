@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #101820;
+}
+
+.stadium {
+    width: 100%;
+    min-height: 620px;
+    height: 100vh;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.stadium::before {
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 35%;
+    bottom: -5%;
+    left: -15%;
+    background: radial-gradient(ellipse, #244d0d, #071b05 75%);
+    border-top: 20px solid #263d2e;
+}
+
+.top-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    color: white;
+}
+
+.top-badge span {
+    font-size: 35px;
+}
+
+.top-badge h3 {
+    font-size: 22px;
+    line-height: 19px;
+    font-weight: 800;
+}
+
+.board-row {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+    z-index: 1;
+}
+
+.team-box {
+    width: 44%;
+    height: 285px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.team-ind {
+    background: #0872d0;
+}
+
+.team-pak {
+    background: #39b523;
+}
+
+.team-box h1 {
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.ball-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.ball-list span {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.team-box h2 {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    margin-top: 60px;
+}
+
+.controls button {
+    width: 80px;
+    height: 80px;
+    border: 4px solid white;
+    border-radius: 22px;
+    color: white;
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-btn {
+    background: orange;
+}
+
+.reset-btn {
+    background: red;
+}

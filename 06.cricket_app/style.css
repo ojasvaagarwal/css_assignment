@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("backgroud.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.board-logo {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+
+.board-logo img {
+    width: 140px;
+    height: auto;
+}
+
+.match-wrap {
+    padding: 65px 4%;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 3px;
+}
+
+h3 {
+    color: gray;
+    margin-bottom: 25px;
+}
+
+.card-table {
+    width: 760px;
+    background-color: white;
+}
+
+.innings-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4513b;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.stat-row {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.stat-row > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.batter {
+    width: 26%;
+    padding-left: 17px;
+    justify-content: flex-start;
+    color: #3986ed;
+}
+
+.dismissal {
+    width: 36%;
+    color: gray;
+}
+
+.stat-row > div:nth-child(n+3) {
+    width: 7%;
+}
+
+.col-head {
+    background-color: #fafafa;
+}
+
+.wide-col {
+    width: 74%;
+    padding-left: 0;
+}
+
+.dnb-list {
+    width: 74%;
+    color: #3986ed;
+}
+
+.bottom-row {
+    height: 45px;
+}

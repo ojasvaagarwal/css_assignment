@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.ludo-wrap {
+    width: 540px;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.upper-half, .lower-half {
+    display: flex;
+    width: 100%;
+    height: 40%;
+}
+
+.mid-strip {
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+
+.clr-red { background: #ff0000; }
+.clr-green { background: #008000; }
+.clr-blue { background: #0000ff; }
+.clr-yellow { background: #ffff00; }
+
+.yard {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.token-pad {
+    width: 70%;
+    height: 70%;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 10px;
+}
+
+.token-pad div {
+    width: 36px;
+    height: 36px;
+    border: 4px solid;
+    border-radius: 50%;
+}
+
+.clr-red .token-pad div { border-color: red; }
+.clr-green .token-pad div { border-color: green; }
+.clr-blue .token-pad div { border-color: blue; }
+.clr-yellow .token-pad div { border-color: yellow; }
+
+.path {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-path {
+    width: 20%;
+    height: 100%;
+}
+
+.row-path {
+    width: 40%;
+    height: 100%;
+}
+
+.step-row {
+    display: flex;
+    width: 100%;
+    flex: 1;
+}
+
+.step-row div {
+    flex: 1;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.goal-box {
+    width: 20%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.wedge {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.wedge.clr-green {
+    clip-path: polygon(0 0, 100% 0, 50% 50%);
+}
+
+.wedge.clr-red {
+    clip-path: polygon(0 0, 0 100%, 50% 50%);
+}
+
+.wedge.clr-yellow {
+    clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+}
+
+.wedge.clr-blue {
+    clip-path: polygon(0 100%, 100% 100%, 50% 50%);
+}
